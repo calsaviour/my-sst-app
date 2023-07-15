@@ -6,8 +6,8 @@ export function FrontendStack({ stack, app }: StackContext) {
   // Define our React app
   const site = new StaticSite(stack, "ReactSite", {
     customDomain: {
-      domainName: `test.moonmoon.link`,
-      domainAlias: `www.test.moonmoon.link`,
+      domainName: `test-${stage}.moonmoon.link`,
+      domainAlias: `www.test-${stage}.moonmoon.link`,
       hostedZone: "moonmoon.link"
     },
     path: "frontend",
