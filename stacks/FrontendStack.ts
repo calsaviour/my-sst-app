@@ -18,5 +18,6 @@ export function FrontendStack({ stack, app }: StackContext) {
   // Show the url in the output
   stack.addOutputs({
     SiteUrl: site.url || "http://localhost:3000",
+    CustomDomain: site.customDomainUrl
   });
 }
